@@ -18,10 +18,7 @@ elif operator == '*':
     result = a * b
     print("{result}")
 elif operator == '/':
-    if b == 0:
-        print(" Please select numbers other than zero ")
-    else:
-        result = a / b
-        print(f"{result}")
+    result = a / b
+    print(f"{result}")
 else:
     print("Invalid! Please select a valid operator")

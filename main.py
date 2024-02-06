@@ -1,27 +1,29 @@
-""" 
-    User input for 2 number and operators
 """
-a = int(input('Enter a number: '))
-b = int(input('Enter another number: '))
-operator = input('Select: + for addition, - for subtraction, * for multiplication, / for division: ')
+    A calculator function from malikchika86@gmail.com
+"""
+def calculator(a, operator, b):
+        if operator =='*':
+            return a * b
+        if operator == '+':
+              return a + b
+        elif operator == '-':
+              return a - b
+        elif operator == '/':
+              return a / b
+        elif operator == '√':
+              return a ** b
+            
 
 """
-Perform operation on numbers and display the result
+    Test cases
 """
-if operator == '+':
-    result = a + b
-    print(f"{result}")
-elif operator == '-':
-    result = a - b
-    print(f"{result}")
-elif operator == '*':
-    result = a * b
-    print("{result}")
-elif operator == '/':
-    if b == 0:
-        print(" Please select numbers other than zero ")
-    else:
-        result = a / b
-        print(f"{result}")
-else:
-    print("Invalid! Please select a valid operator")
+multiplication = calculator(3, '*', 4)
+addition = calculator(4, '+', 4)
+subtraction = calculator(4, '-', 4)
+division = calculator(4, '/', 4)
+square = calculator(4, '√', 4)
+
+
+test = [multiplication, addition, subtraction, division, square]
+for i in test:
+      print(i)

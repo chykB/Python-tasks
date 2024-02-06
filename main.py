@@ -17,6 +17,7 @@ def calculator(a, operator, b):
 """
     Test cases
 """
+
 multiplication = calculator(3, '*', 4)
 addition = calculator(4, '+', 4)
 subtraction = calculator(4, '-', 4)

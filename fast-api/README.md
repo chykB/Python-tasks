@@ -3,7 +3,7 @@
 # FastAPI User Full Name API
 
 ## Overview
-This project is a FastAPI-based API for managing user full names. It provides endpoints for creating users with first and last names, as well as retrieving the full name by providing the first and last names.
+This project is a FastAPI-based API for managing user full names. It provides endpoints for creating users with first and last names, as well as retrieving the full name.
 
 ## Installation
 To run this project locally:

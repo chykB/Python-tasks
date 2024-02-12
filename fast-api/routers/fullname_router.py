@@ -21,6 +21,7 @@ async def upload_pdf(file: UploadFile = File(...), directory_path=None):
     """
         This endpoint collect a PDF file and saves it to the specified directory path. 
         Returns a dictionary indicating the success status and a message.
+        malikchika86@gmail.com
     """
     try:
         filename, file_extension = os.path.splitext(file.filename)

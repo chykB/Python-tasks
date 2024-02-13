@@ -1,4 +1,4 @@
-from fastapi import File, UploadFile, APIRouter
+from fastapi import APIRouter, File, UploadFile
 import os
 
 router = APIRouter()

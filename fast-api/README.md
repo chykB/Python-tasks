@@ -8,9 +8,18 @@ This project is a FastAPI-based API for managing user full names. It provides en
 ## Installation
 To run this project locally:
 
-1. Clone the repository:
-2. Install dependencies
-3. Start the FastAPI server.
+# Clone the repository
+git clone <repository_url>
+
+# Navigate to the project directory
+cd <project_directory>
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the FastAPI server
+uvicorn main:app --reload
+
 
 ## Once the server is running
 Once the server is running, you can access the API.
@@ -24,11 +33,13 @@ Once the server is running, you can access the API.
 - Retrieves the full name.
 
 - **POST /upload_pdf/**
-  - Uploads a PDF file and saves it to a specified directory path of your choice. Or automatically save to your current working directory
+  - Uploads a PDF file and saves it to a specified directory path of your choice. Or automatically save to your current working directory.
 
     #### Parameters
     - `file`: The PDF file to upload.
     - `directory_path` (query, optional): The directory path where the file will be saved. If not provided, the file will be saved to the current working directory.
+    - `overwrite_existing` (query, optional): If set to `true`, the endpoint will overwrite the file if it already exists at the specified location. If set to `false` or not provided, the user will be prompted to choose whether to overwrite the existing file or select a different directory.
+
 
     #### Responses
     - 200 OK: File uploaded successfully.
